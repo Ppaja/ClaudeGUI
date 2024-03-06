@@ -75,13 +75,12 @@ message_entry.grid(row=2, column=1, padx=10, pady=5, sticky="we")
 send_button = tk.Button(root, text="Send", command=send_request)
 send_button.grid(row=3, column=1, pady=10)
 
-# Status label
 status_label = tk.Label(root, text="Status:")
 status_label.grid(row=3, column=0, sticky="e")
 
 response_label = tk.Label(root, text="Response:")
 response_label.grid(row=4, column=0, sticky="w")
-response_text = tk.Text(root, width=150, height=50)
+response_text = tk.Text(root, width=150, height=30)
 response_text.grid(row=4, column=1, padx=10, pady=5, sticky="we")
 
 scrollbar = ttk.Scrollbar(root, orient="vertical", command=response_text.yview)
